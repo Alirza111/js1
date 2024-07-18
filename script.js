@@ -161,11 +161,9 @@ if (username && password) {
 let eded9 = -10;
 
 switch (true) {
-    case eded9 < 0:
-        console.log("eded menfidir");
+    case eded9 < 0 || eded9 == 0:
+        console.log("eded menfidir ve ya sifirdir");
         break;
-    case eded9 == 0:
-        console.log("eded sifirdir");
-        break;
-    default: console.log("eded musbetdir");
+  
+    default: console.log("eded musbetdir ve ya sifir deyil");
 }
